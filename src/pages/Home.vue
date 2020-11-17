@@ -8,7 +8,6 @@
         <router-link to="/doc">开始</router-link>
       </p>
     </div>
-  </div>
 </template>
 
 <script lang="ts">

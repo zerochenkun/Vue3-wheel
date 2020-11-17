@@ -30,11 +30,8 @@ export default {
   components: { Topnav },
   setup() {
     let asideVisiable = inject<Ref<boolean>>("asideVisiable");
-    const toggleAside = () => {
-      asideVisiable.value = !asideVisiable.value;
-    };
     console.log("Doc's  asideVisiable.value: ", asideVisiable.value);
-    return { toggleAside };
+    return { asideVisiable}
   }
 };
 </script>
