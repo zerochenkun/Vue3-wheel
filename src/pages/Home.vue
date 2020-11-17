@@ -13,6 +13,6 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-  .topNav{border:1px solid red}
-</style>
+<style lang="sass" scoped>
+  .topnav{border:10px solid red}
+</style>>
