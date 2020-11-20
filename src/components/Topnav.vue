@@ -1,6 +1,6 @@
 <template>
   <div class="topnav">
-    <div class="logo" @click="toggleAside">Logo</div>
+    <div class="logo" @click="toggleAside" class="toggleAside">Logo</div>
     <div class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
@@ -38,6 +38,13 @@ export default {
     > li {
       margin: 0 1em;
     }
+  }
+  > .toggleAside{
+
+  }
+  @media (max-width: 500px) {
+    .menu {display:none}
+    .logo {margin:0 auto}
   }
 }
 </style>
