@@ -5,7 +5,7 @@
       <h2>组件列表</h2>
       <ol>
         <li>
-          <router-link to="/doc/swich">Switch 组件</router-link>
+          <router-link to="/doc/switch">Switch 组件</router-link>
         </li>
         <li>
           <router-link to="/doc/button">Button 组件</router-link>
@@ -18,7 +18,9 @@
         </li>
       </ol>
     </aside>
-    <main>主内容</main>
+    <main>
+      <router-view />
+    </main>
   </div>
 </template>
 
@@ -31,8 +33,8 @@ export default {
   setup() {
     let asideVisiable = inject<Ref<boolean>>("asideVisiable");
     console.log("Doc's  asideVisiable.value: ", asideVisiable.value);
-    return { asideVisiable}
-  }
+    return { asideVisiable };
+  },
 };
 </script>
 
@@ -50,9 +52,9 @@ aside {
     }
   }
   @media (max-width: 500px) {
-    position:fixed;
-    top:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    left: 0;
     padding-top: 70px;
   }
 }
