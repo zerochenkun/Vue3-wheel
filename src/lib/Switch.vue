@@ -1,0 +1,5 @@
+<template>
+  <div>
+    <p>Switch 组件</p>
+  </div>
+</template>
